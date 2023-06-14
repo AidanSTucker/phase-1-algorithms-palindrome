@@ -1,9 +1,14 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const formattedStr = word.toLowerCase();
+  return formattedStr === formattedStr.split('').reverse().join('');
 }
 
 /* 
   Add your pseudocode here
+  function isPalindrome(argument) {
+    new variable formattedStr = take the word input from the user and make it all lower case
+    if the formattedStr is equal to formattedStr in reverse, then return it and say true
+  }
 */
 
 /*
